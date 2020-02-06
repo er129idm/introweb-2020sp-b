@@ -11,7 +11,7 @@
 
 ## Homework part A - Clean the Fridge!
 
-  Complete the [Clean Up the Fridge!](https://github.com/effieVision/command-line-refrigerator-lab) activity with your own GitHub account.
+  Complete the [Clean Up the Fridge!](https://github.com/er129idm/command-line-refrigerator-lab) activity with your own GitHub account.
 
 #### Deliverable:
 
