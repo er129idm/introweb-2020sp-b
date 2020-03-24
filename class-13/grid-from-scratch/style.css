@@ -6,6 +6,7 @@ body, html {
   padding: 0px;
   margin: 0px;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 .mainGridContainer {
@@ -23,6 +24,11 @@ body, html {
 .sectionHeadline {
   font-size: 8vmin;
   text-decoration: underline;
+}
+
+.sectionHeadline:hover {
+  color: #ff0072;
+  animation: blinkingText 1.2s;
 }
 
 p {
@@ -49,4 +55,18 @@ p {
 
 .item-4x {
   grid-column-end: span 4;
+}
+
+/* ANIMATIONS */
+
+@keyframes blinkingText {
+    0% {     color: #111;
+              padding: 0;
+              background-color: transparent;}
+    50% {    color: #ff0072;
+              padding: 4vmin;
+            background-color: #00ffff;}
+    100%{   color: #111;
+            padding: 0;
+          background-color: transparent;}
 }
