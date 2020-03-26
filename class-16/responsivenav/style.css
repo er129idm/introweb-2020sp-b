@@ -1,6 +1,7 @@
 body {
   background-color: #fff;
   font-family: sans-serif;
+  padding: 2vmin;
 
 }
 
@@ -33,6 +34,19 @@ body {
     font-weight: bolder;
 }
 
+.contentContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.item-4x {
+  grid-column-end: span 1;
+}
+
+.item-8x {
+  grid-column-end: span 1;
+}
+
 /* Change color on hover */
 .topnav a:hover {
     background-color: #ddd;
@@ -55,5 +69,19 @@ body {
     opacity: 1.0;
     padding: 4vmin;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contentContainer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 4vmin;
+  }
+
+  .item-4x {
+    grid-column-end: span 4;
+  }
+
+  .item-8x {
+    grid-column-end: span 8;
   }
 }
