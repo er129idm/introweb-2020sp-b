@@ -2,7 +2,6 @@ body {
   background-color: #fff;
   font-family: sans-serif;
   padding: 2vmin;
-
 }
 
 /* FLEXBOX TOGGLE */
@@ -55,13 +54,6 @@ body {
 
 /* On screens that are 600px wide or more, make the menu links stack on top of each other instead of next to each other */
 @media screen and (min-width: 600px) {
-
-  /* FLEXBOX TOGGLE */
-  /* .topnav {
-    background-color: #0ea7e8;
-    flex-direction: row;
-    justify-content: space-between;
-  } */
 
   /* GRID TOGGLE */
   .topnav {

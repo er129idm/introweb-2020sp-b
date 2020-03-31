@@ -6,7 +6,7 @@ body, html {
   padding: 0px;
   margin: 0px;
   font-family: sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .mainGridContainer {
@@ -69,4 +69,16 @@ p {
     100%{   color: #111;
             padding: 0;
           background-color: transparent;}
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+  .mainGridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .item-2x, .item-2x2, .item-8x, .item-4x {
+    grid-column-end: span 1;
+  }
 }
