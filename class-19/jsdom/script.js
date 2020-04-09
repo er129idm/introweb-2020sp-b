@@ -13,28 +13,44 @@ executeButton.addEventListener("click", demonstrationFunction);
 
 function demonstrationFunction() {
 
-  console.log("Called function....");
+  // console.log("Called function....");
 
-  // alert("Over");
+  // alert("Yo!");
 
   /// Modifying css directly
-  // heading.style.color = "rgb(0,255,100)";
-  // heading.style.fontSize = "50rem";
-  // heading.style.textShadow = "0px 0px 1px #ff0072";
-  // heading.style.transform = "translate(500px,500px)";
+  var randomRed = Math.random() * 255;
+  var randomGreen = Math.random() * 255;
+  var randomBlue = Math.random() * 255;
+  // console.log(randomRed);
+  // console.log(randomGreen);
+  // console.log(randomBlue);
+
+  // rgb(100,400,300);
+  var outputColorString = "rgb(" + randomRed + "," + randomGreen + "," + randomBlue + ")";
+  // console.log(outputColorString);
+
+  // heading.style.color = outputColorString;
+  // heading.style.fontSize = "5rem";
+  // heading.style.textShadow = "0px 0px 10px #fff";
+  // heading.style.transform = "rotate(10deg)";
 
   /// Modifying classes
   // console.log("Class list BEFORE:");
   // console.log(heading.classList);
-  //
-  // heading.classList.toggle("specialTitle");
-  //
+
+  heading.classList.toggle("specialTitle");
+
   // console.log("Class list AFTER:");
   // console.log(heading.classList);
 
   /// Modifying HTML content
   // outputParagraph.innerHTML = "Some new text...";
   var currentInputText = inputElement.value;
+  var currentInputAsNumber = parseFloat(currentInputText);
+  console.log(currentInputText / 5.5);
+  console.log(currentInputAsNumber / 5.5);
+
+
   outputParagraph.innerHTML = "My cat " + currentInputText + "s way too much.";
 
 
