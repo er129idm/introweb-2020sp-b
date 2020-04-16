@@ -22,4 +22,4 @@ Media Elements and External library showcase
 
 ### Homework
 
-Begin thinking about and gathering references / assembling a mood board for your final project.
+Create a website using at least two separate libraries.
